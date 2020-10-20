@@ -1,4 +1,4 @@
-package com.testkoleo.services
+package com.testkoleo.helpers
 
 import okhttp3.Interceptor
 import okhttp3.Response

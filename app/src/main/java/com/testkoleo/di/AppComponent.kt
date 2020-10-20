@@ -1,13 +1,13 @@
 package com.testkoleo.di
 
-import com.testkoleo.MainActivity
-import com.testkoleo.data.source.StationsRepository
+import com.testkoleo.data.local.StationDao
+import com.testkoleo.ui.MainActivity
+import com.testkoleo.data.repository.StationsRepository
 import dagger.Component
 import javax.inject.Singleton
 
-@Component(modules = [StationsRemoteModule::class])
 @Singleton
+@Component(modules = [StationsRemoteModule::class, StationsLocalModule:: class])
 interface AppComponent {
-    fun inject(repository: StationsRepository)
     fun inject(mainActivity: MainActivity)
 }

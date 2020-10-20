@@ -13,4 +13,11 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="EditText">
+        <item name="android:background">@drawable/rounded_background</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/medium_padding</item>
+        <item name="android:layout_margin">@dimen/small_margin</item>
+    </style>
 </resources>
